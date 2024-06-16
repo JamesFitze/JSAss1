@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* Assignment 1 | COMP1073 Client-Side JavaScript */
+/* setting a border box style */
+*{
+    box-sizing: border-box;
+}
+
+.container{
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        width: 80vw;
+        height: 100%;
+
+    /* setting page diameters and centering items */
+    .content-container{
+        height: 100%;
+        padding-top: 20px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        text-align: center;
+        font-weight: bold;
+        /* adding text shadows to p elements */
+        p{
+            text-shadow: -1px -1px 0 white,  
+            1px -1px 0 white,
+           -1px  1px 0 white,
+            1px  1px 0 white;
+
+            width: 80%;
+            text-align: center;
+            margin: auto;
+
+        }
+        
+        /* hovering image gives you the pointer cursor and a border */
+        .row1 img:hover,
+        .row2 img:hover,
+        .row3 img:hover,
+        .row4 img:hover,
+        .row5 img:hover
+        {
+            border: 2px solid black;
+            cursor: pointer;
+            
+        }
+
+        .row1 img:hover,
+        .row2 img:hover,
+        .row3 img:hover,
+        .row4 img:hover,
+        .row5 img:hover{
+            transform: scale(1.1);
+        }
+
+        /* styling the rows with color and changing the direction to columns */
+        .row1{
+            height: 93vh;
+            background-color: #9a64a6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .row2{
+            height: 93vh;
+            background-color: #4a91b9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .row3{
+            height: 93vh;
+            background-color: #889c5e;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .row4{
+            height: 93vh;
+            background-color: #dc9456;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .row5{
+            height: 93vh;
+            background-color: #d97db5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    /* changing colors of the buttons and the color of the hover */
+    #random1{
+        background-color: #d6addf;
+    }
+
+    #random1:hover{
+        background-color: #a04ab1;
+    }
+
+    #random2{
+        background-color: #a1cce5;
+    }
+
+    #random2:hover{
+        background-color: #4a91b9;
+    }
+
+    #random3{
+        background-color: #d4ed9d;
+    }
+    
+    #random3:hover{
+        background-color: #889c5e;
+    }
+
+    #random4{
+        background-color: #f0bf94;
+    }
+
+    #random4:hover{
+        background-color: #dc9456;
+    }
+
+    #random5{
+        background-color: #fab7e0;
+    }
+
+    #random5:hover{
+        background-color: #a04ab1;
+    }
+
+    /* adding button menu container to encapsulate the buttons */
+    .output-container{
+        display: flex;
+        flex-direction: column;
+        background-color: silver;
+        margin-right: 100px;
+        width: 80svh;
+        height: 60vh;
+        border-radius: 10px;
+
+        h3{
+            text-align: center;
+            font-size: 2em;
+        }
+
+        .output-text{
+            background-color: transparent;
+            padding-bottom: 10px;
+        }
+        .output-button{
+            padding: 0 15%;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            text-align: center;
+            /* button styling in menu */
+            button{
+                margin: 30px 0;
+                padding: 3px 5px;
+                background-color: aliceblue;
+                border-radius: 10px;
+                
+            }
+        }
+    }
+}
+
+    img{
+        width: 120px;
+        height: auto;
+    }
+
+    p{
+        padding: 0;
+        margin: 0;
+    }
+
+    /* adding styling to the pick buttons and giving it a push animation */
+.pick{
+    height: 100%;
+    padding-top: 20px;
+
+    button{
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 5px 8px;
+        border-radius: 50%;
+        border: 3px solid #F7F9F2;
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        color: white;
+        background-color: white;
+    }
+    button:active{
+        transform: translate(2px, 2px);
+        box-shadow: none;
+    }
+}
+.content{
+    padding-bottom: 30px;
+}
+
+/* setting initial background color to transparent*/
+#sentence {
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+}
