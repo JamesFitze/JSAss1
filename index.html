@@ -194,17 +194,19 @@
 	<h3>Button Menu</h3>
 	<!-- menu buttons -->
 	<div class="output-button">
-		<button id = "story">Random story</button>
-		<!-- text area -->
-		<div class="output-text">
-			<p id="sentence"></p>
+		<div class="output">
+			<button id = "story">Random story</button>
+			<!-- text area -->
+			<div class="output-text">
+				<p id="sentence"></p>
+			</div>
+			<button id = "speaker">Read sentence</button>
+			<button id = "reset">Reset</button>
+			<!-- slider for speech rate -->
+			<label for="rateSlider">Speech Rate:</label>
+			<input type="range" id="rateSlider" min="0" max="2" step="0.01" value="1">
+			<span id="rateValue">1</span>
 		</div>
-		<button id = "speaker">Read sentence</button>
-		<button id = "reset">Reset</button>
-		<!-- slider for speech rate -->
-		<label for="rateSlider">Speech Rate:</label>
-		<input type="range" id="rateSlider" min="0" max="2" step="0.01" value="1">
-		<span id="rateValue">1</span>
 	</div>
 </div>
 </div>
